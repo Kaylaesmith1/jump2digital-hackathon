@@ -1,12 +1,4 @@
-<!-- ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome Kayla S,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
+<!-- ## Gitpod Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
@@ -34,77 +26,250 @@ To log into the Heroku toolbelt CLI:
 
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+------ -->
+# Rick & Morty Hackathon Test
 
-## Release History
+Information about the tech test to participate in a hackathon.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 20 2023:** Update Python version to 3.9.17.
+A link to the live site can be found here - [Rick & Morty](https://XXXX.com/)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Responsive site design](/documentation/readme_images/amiresponsive.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Table of Contents
+<!-- - [The Wine Garden BnB](#the-wine-garden-bnb)
+  * [Table of Contents](#table-of-contents)
+  * [User Experience (UX)](#user-experience--ux-)
+    + [Design](#design)
+      - [Color Scheme](#color-scheme)
+      - [Imagery](#imagery)
+      - [Fonts](#fonts)
+  * [Testing](#testing)
+  * [Security Features and Defensive Design](#security-features-and-defensive-design)
+    + [User Authentication](#user-authentication)
+    + [Form Validation](#form-validation)
+    + [Database Security](#database-security)
+    + [Custom error pages](#custom-error-pages)
+  * [Features](#features)
+    + [Header](#header)
+    + [Footer](#footer)
+    + [Home Page](#home-page)
+    + [Error Pages](#error-pages)
+    + [Future Features](#future-features)
+  * [Deployment - Heroku](#deployment---heroku)
+    + [Create a Heroku App:](#create-a-heroku-app-)
+    + [Attach the Postgres database:](#attach-the-postgres-database-)
+    + [Prepare the environment and settings.py file:](#prepare-the-environment-and-settingspy-file-)
+    + [Create files / directories](#create-files---directories)
+    + [Update Heroku Config Vars](#update-heroku-config-vars)
+    + [Deploy](#deploy)
+  * [Forking this repository](#forking-this-repository)
+  * [Cloning this repository](#cloning-this-repository)
+  * [Languages](#languages)
+  * [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+  * [Credits](#credits)
+  * [Acknowledgments](#acknowledgments) -->
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## User Experience (UX)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Who is using the site? Why / what do they hope to get from it?
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Design
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The website design is set in simple, paragraph form, which is intended to make it easier for the reader to navigate. The navigation bar is clear on each page, as is the footer and the pages are labelled with a 'banner' format thus ensuring users know where they are at all times. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The color scheme was chosen to reflect a 'red wine' color and incorporate rich, earthy tones to encompass the vineyard theme.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Color Scheme
+The color palette was created using the palette generator [Coolers](https://coolors.co/).
 
-------
 
-## FAQ about the uptime script
+WHY CHOSE THIS COLOR SCHEME?
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+All combinations of the colors used illustrate a contrast between background and text to ensure maximum user accessibility.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Color Palette](/assets/images/color-scheme.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+#### Imagery
+Why these images / where from? Include favicon and navbar 'logo'.
+ 
 
-**So….?**
+#### Fonts
+The 'XX' font is the main font used on the page, while 'XX' in a bolder weight was used for the navbar and 'XX' for other accent areas. The 'Sans-serif' font is noted as a backup and will be used in the event that the main fonts aren't imported correctly to the site. These font styles were chosen for their ease of legibility and general letter spacing and were imported from [Google Fonts](https://fonts.google.com/).
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+## Testing
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Details of all testing done can be viewed in depth in the [TESTING.md](https://github.com/Kaylaesmith1/bed-and-breakfast/blob/main/TESTING.md) document.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+## Features
+<!-- 
+### Header
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Header](/documentation/readme_images/header.png)
 
----
+**Logo**
+- A customized logo was created using the free logo generator, [Hatchful](https://www.shopify.com/tools/logo-maker), by Shopify.
+- The logo is positioned at the top left of the navigation bar. The logo is linked to the home page so the user can easily navigate the site.
 
-Happy coding! -->
+![Header](/documentation/readme_images/navbar-logo.png)
+
+**Navigation Bar**
+
+- The navigation bar is present at the top of every page and includes all links to the other pages.
+- The My Account navigation link is a drop down menu that includes the Sign up and Log in links. 
+
+![Header](/documentation/readme_images/navbar-no-user.png)
+
+- When a user is logged in, the title changes to the user's name with a profile icon and the dropdown menu includes the Book A Room, My Bookings and Logout page links.
+
+![Header](/documentation/readme_images/navbar-authenticated-user.png)
+
+- The navigation bar is fully responsive and collapses into a hamburger menu icon on smaller screen sizes. collapsing into a hamburger menu when the screen size becomes too small. When the hamburger is clicked, the menu options open on the left-hand side just under the page logo.
+
+![Header](/documentation/readme_images/navbar-hamburger.png)
+
+- Hovering over the links will change the color to a light green.
+
+![Header](/documentation/readme_images/navbar-hover.png)
+
+
+### Footer
+- The footer section includes working links to GitHub, Twitter, Instagram and Facebook. Clicking each link will open a separate browser page to the login of that website, barring the GitHub icon, which opens to my personal GitHub page.
+
+![Footer](/documentation/readme_images/footer.png)
+
+- Hovering over the links will change the color to a light green, identical to the navbar. 
+
+![Footer](/documentation/readme_images/footer-hover.png) -->
+
+### Landing Page
+<!-- 
+**Call to Action Section**
+- The landing page includes a call to action section which encourages the user to book a room at The Wine Garden BnB. If the user is logged in, the message above the 'Book Now' button is, "Start planning your stay at The Wine Garden BnB". 
+
+![Landing Page - Call to Action](/documentation/readme_images/landing-hero-image-authenticated.png)
+- If the user is not logged in, "Enjoy a relaxing stay and a glass of wine in the tranquility of a Midwest vineyard!" appears. Below, a 'Book Now' button is visible and will take the user to the login page where they can either log in or sign up to continue the booking process.
+
+![Landing Page - Call to Action](/documentation/readme_images/landing-hero-image.png)
+
+
+
+**Why a BnB Section**
+- The "Why a bed and breakfast' section gives a brief overview of why users should choose a bed and breakfast over a 'cookie cutter' hotel experience. Under that, a few of the ammenities are listed in short paragraphs with three icons of the most important features The Wine Garden has to offer.
+
+![Landing Page - Why a BnB](/documentation/readme_images/landing-why-bnb.png) -->
+
+
+
+
+
+
+### Error Pages - edit these
+
+<!-- Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
+
+![Error 404](/documentation/readme_images/error-404.png)
+
+- 404 Page Not Found - Sorry! The page you're looking for doesn't exist. Click below to return to the homepage.
+
+![Error 500](/documentation/readme_images/error-500.png)
+
+- 500 Server Error - Sorry! The Wine Garden BnB can't handle this request at the moment. Please return to the home page. -->
+
+### Future Features
+<!-- A few features were thought about mid-project as aspects that could improve the UI/UX but that were not implemented in this version of the project, either due to time contraints or simply because they were suggestions from friends / family members during the final testing phase of the project.
+
+None were original user stories and were therefore not included anywhere in the project other than in this section. They are detailed below.
+
+1. Email authentication for users on signing up. This would add another layer of authentication for users and would be an improvement on the overall website. 
+2. Have something on the My Bookings page even if you don’t have any bookings registered. As of now it's a page titled 'My bookings' but nothing is shown.
+![Empty bookings](/documentation/readme_images/empty-bookings.png)
+3. Incorporate a payment option, rates and pricing for booking. This is normally a feature of online hotel booking platforms. Taking credit card information could be a helpful aspect to implement in the future.
+4. Add photos of menu items or some food items on the breakfast page. Perhaps clicking the menu item could open a photo of it and a description of ingredients in case the user had questions of what exactly it was.
+5. If a user cancels a booking, a pop up should appear with checkboxes as to why they cancelled. This could also be a form with a textarea field to be more specific.
+6. Perhaps include a 'Book Now' button somewhere no each page of the website to facilitate easy booking.
+7. The Admin user has access to all bookings from the live site. As of now, each user has access only to their bookings from the live website. It could be helpful for the Admin superuser to be able to access everyone's bookings and have CRUD functionality on them. -->
+
+## Deployment - Heroku
+
+The following steps were taken to deploy the live website from the GitHub repository:
+
+ADD STEPS HERE
+
+The site is now live and operational.
+## Forking this repository
+<!-- - Locate the repository at this link [Rick & Morty](https://github.com/Kaylaesmith1/XXX).
+- At the top of the repository, on the right side of the page, select "Fork" from the buttons available. 
+- This creates a copy of the repository -->
+
+## Cloning this repository
+To clone this repository follow the below steps: 
+<!-- 
+1. Locate the repository at this link [Rick & Morty](https://github.com/Kaylaesmith1/XXX). 
+2. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the prefered cloning option, and then copy the link provided. 
+3. Open **Terminal**.
+4. In Terminal, change the current working directory to the desired location of the cloned directory.
+5. Type **'git clone'**, and then paste the URL previously copied from GitHub. 
+6. Type **'Enter'** to create the local clone.  -->
+
+## Languages
+
+- Python
+- HTML
+- CSS
+- Javascript
+
+## Frameworks - Libraries - Programs Used 
+<!-- - [Django](https://www.djangoproject.com/): Main python framework used in the development of this project
+- [Django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html): Authentication library used to create user accounts
+- [PostgreSQL](https://www.postgresql.org/) Used as the database for this project.
+- [Heroku](https://dashboard.heroku.com/login) - Used as the cloud-based platform to deploy the site. -->
+- [Am I Responsive](https://amiresponsive.co.uk/) - Used to verify responsiveness of website on different devices.
+<!-- - [Figma](https://www.figma.com/) - Used to create wireframes for both desktop and mobile visuals. -->
+- [Favicon](https://favicon.io/) - Used to create the wine glass icon for the browser tab.
+- [Font Awesome](https://fontawesome.com/) - Used for icons on the home page and stars on the About page.
+- [GitHub](https://github.com/) - Used for version control and agile methodology.
+- [Google Fonts](https://fonts.google.com/) - Imported and used to change fonts on pages from default fonts.
+- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+- [PEP8 Online](https://pep8ci.herokuapp.com/#) - Used to validate all Python code pages in the project.
+- [Jshint](https://jshint.com/) - Used to validate the JavaScript page.
+- [Coolors](https://coolors.co/) - Used to create color scheme.
+<!-- - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) Used to manage Django Forms
+- [Cloudinary](https://cloudinary.com/): Used to upload all images used on the website. -->
+- [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/): CSS used for developing responsiveness and styling the website.
+<!-- - [Hatchful](https://hatchful.shopify.com/): Used to generate custom logo found on all pages.
+- [Wondershare](https://www.wondershare.com/): Used to style aspects of the logo (remove background).
+- [Canva](https://www.canva.com/): Used for page image banners (colored overlay and opacity) -->
+- [Google](https://www.google.com/): All images used were sourced from a Google search.
+<!-- - [EmailJS](https://www.emailjs.com/): Used to link the contact form to developer's personal email account. -->
+<!-- - [Pixelied](https://pixelied.com/features/photo-filters/convert-image-to-black-and-white): Used to convert image to black and white before using a colored overlay for banners on pages. -->
+
+## Credits
+
+<!-- - [W3Schools](https://www.w3schools.com/)
+- [Django Docs](https://docs.djangoproject.com/en/4.0/)
+- [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Code Institute - Blog Walkthrough Project](https://github.com/Code-Institute-Solutions/Django3blog)
+- [YouTube Video for pop up messages](https://www.youtube.com/watch?v=lRrrLCrZDxI) - Used for contact form message pop ups on successful submission and errors. -->
+
+
+## Acknowledgments
+<!-- 
+Special thanks to the tutoring team, specifically Joshua who helped with the contact form, Sarah who helped with implementing CRUD functionality on the live site, and Oisin who helped fix the bug of being able to book a room under a different user.
+
+Ian_alumni from the slack channel was vital to my understanding of the pathway followed for my delete buttons and getting them to work correctly. He spent time in a call with me clarifying the urls and views pathways. Thank you, Ian!
+
+Lastly, thank you, too, to my mentor Harry for sharing his project and ideas about CRUD functionality. He gave clear, concise feedback on what needed to be fixed before project submission and complemented the work overall.  -->
