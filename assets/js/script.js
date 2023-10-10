@@ -1,53 +1,55 @@
-// const apiUrl = 'https://rickandmortyapi.com/api/character';
-
-// async function fetchCharacters() {
-//     try {
-//         const response = await fetch(apiUrl);
-//         const data = await response.json();
-
-//         const characterList = document.getElementById('character-list');
-//         data.results.forEach((character) => {
-//             const li = document.createElement('li');
-//             li.textContent = character.name;
-//             characterList.appendChild(li);
-//         });
-//     } catch (error) {
-//         console.error('Error fetching data:', error);
-//     }
-// }
-
-// fetchCharacters();
-
    //FETCH ALL CHARACTERS
    const apiUrl = 'https://rickandmortyapi.com/api/character';
-   // Function to fetch and display characters
-async function fetchCharacters() {
-    // const charactersPerPage = 20; 
-    let page = 1; // Start with page 1
-    let allCharacters = []; // Array to store all characters
 
+   // Function to fetch all character IDs from the API
+async function fetchAllCharacterIds() {
     try {
-        while (true) {
+        // Fetch the first page of characters to get the total number of characters
+        const response = await fetch('https://rickandmortyapi.com/api/character');
+        const data = await response.json();
+        const totalCharacters = data.info.count;
+
+        // Calculate the number of pages needed to fetch all characters (assuming 20 characters per page)
+        const totalPages = Math.ceil(totalCharacters / 20);
+
+        // Initialize an array to store all character IDs
+        const allCharacterIds = [];
+
+        // Loop through each page and fetch character IDs
+        for (let page = 1; page <= totalPages; page++) {
             const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${page}`);
             const data = await response.json();
 
-            // Add the characters from the current page to the array
-            allCharacters = allCharacters.concat(data.results);
-
-            // If there are no more pages, exit the loop
-            if (data.info.next === null) {
-                break;
-            }
-
-            // Move to the next page
-            page++;
+            // Extract character IDs from the current page and add them to the array
+            const characterIds = data.results.map(character => character.id);
+            allCharacterIds.push(...characterIds);
         }
 
-        // Get the container where character cards will be displayed
-        const characterContainer = document.getElementById('character-container');
+        return allCharacterIds;
+    } catch (error) {
+        console.error('Error fetching character IDs:', error);
+        return [];
+    }
+}
 
-        // Loop through each character in the allCharacters array
-        allCharacters.forEach(character => {
+// Function to fetch and display characters by their characterIds
+async function fetchCharactersByIds() {
+    // Get all character IDs
+    const characterIds = await fetchAllCharacterIds();
+
+    // Check if characterIds is not empty
+    if (characterIds.length === 0) {
+        return;
+    }
+
+    const characterContainer = document.getElementById('character-container');
+
+    try {
+        for (const characterId of characterIds) {
+            // Fetch the character by ID from the API
+            const response = await fetch(`https://rickandmortyapi.com/api/character/${characterId}`);
+            const character = await response.json();
+
             // Create a card element for the character (same code as before)
             // ...
 
@@ -78,14 +80,15 @@ async function fetchCharacters() {
             card.appendChild(species);
             card.appendChild(location);
 
-
             // Append the card to the container
             characterContainer.appendChild(card);
-        });
+        }
     } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching characters by IDs:', error);
     }
 }
 
-// Call the fetchCharacters function to fetch and display all characters
-fetchCharacters();
+// Call the fetchCharactersByIds function to fetch and display all characters
+fetchCharactersByIds();
+
+
