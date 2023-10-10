@@ -97,7 +97,7 @@ WHY CHOSE THIS COLOR SCHEME?
 All combinations of the colors used illustrate a contrast between background and text to ensure maximum user accessibility.
 
 
-![Color Palette](/assets/images/color-scheme.png)
+![Color Palette](/assets/images/color-scheme2.png)
 
 
 #### Imagery
@@ -263,7 +263,9 @@ To clone this repository follow the below steps:
 - [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 - [Stack Overflow](https://stackoverflow.com/)
 - [Code Institute - Blog Walkthrough Project](https://github.com/Code-Institute-Solutions/Django3blog)
-- [YouTube Video for pop up messages](https://www.youtube.com/watch?v=lRrrLCrZDxI) - Used for contact form message pop ups on successful submission and errors. -->
+- [YouTube Video for pop up messages](https://www.youtube.com/watch?v=lRrrLCrZDxI) - Used for contact form message pop ups on successful submission and errors. 
+-  This youtube video for fetching api data: https://www.youtube.com/watch?v=zUcc4vW-jsI 
+-->
 
 
 ## Acknowledgments
