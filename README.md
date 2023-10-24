@@ -72,7 +72,7 @@ A link to the live site can be found here - [Rick & Morty](https://XXXX.com/)
   * [Credits](#credits)
   * [Acknowledgments](#acknowledgments) -->
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+<!-- <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 ## User Experience (UX)
@@ -110,119 +110,21 @@ The 'XX' font is the main font used on the page, while 'XX' in a bolder weight w
 
 ## Testing
 
-Details of all testing done can be viewed in depth in the [TESTING.md](https://github.com/Kaylaesmith1/bed-and-breakfast/blob/main/TESTING.md) document.
-
 
 ## Features
-<!-- 
-### Header
-
-![Header](/documentation/readme_images/header.png)
-
-**Logo**
-- A customized logo was created using the free logo generator, [Hatchful](https://www.shopify.com/tools/logo-maker), by Shopify.
-- The logo is positioned at the top left of the navigation bar. The logo is linked to the home page so the user can easily navigate the site.
-
-![Header](/documentation/readme_images/navbar-logo.png)
-
-**Navigation Bar**
-
-- The navigation bar is present at the top of every page and includes all links to the other pages.
-- The My Account navigation link is a drop down menu that includes the Sign up and Log in links. 
-
-![Header](/documentation/readme_images/navbar-no-user.png)
-
-- When a user is logged in, the title changes to the user's name with a profile icon and the dropdown menu includes the Book A Room, My Bookings and Logout page links.
-
-![Header](/documentation/readme_images/navbar-authenticated-user.png)
-
-- The navigation bar is fully responsive and collapses into a hamburger menu icon on smaller screen sizes. collapsing into a hamburger menu when the screen size becomes too small. When the hamburger is clicked, the menu options open on the left-hand side just under the page logo.
-
-![Header](/documentation/readme_images/navbar-hamburger.png)
-
-- Hovering over the links will change the color to a light green.
-
-![Header](/documentation/readme_images/navbar-hover.png)
 
 
-### Footer
-- The footer section includes working links to GitHub, Twitter, Instagram and Facebook. Clicking each link will open a separate browser page to the login of that website, barring the GitHub icon, which opens to my personal GitHub page.
-
-![Footer](/documentation/readme_images/footer.png)
-
-- Hovering over the links will change the color to a light green, identical to the navbar. 
-
-![Footer](/documentation/readme_images/footer-hover.png) -->
-
-### Landing Page
-<!-- 
-**Call to Action Section**
-- The landing page includes a call to action section which encourages the user to book a room at The Wine Garden BnB. If the user is logged in, the message above the 'Book Now' button is, "Start planning your stay at The Wine Garden BnB". 
-
-![Landing Page - Call to Action](/documentation/readme_images/landing-hero-image-authenticated.png)
-- If the user is not logged in, "Enjoy a relaxing stay and a glass of wine in the tranquility of a Midwest vineyard!" appears. Below, a 'Book Now' button is visible and will take the user to the login page where they can either log in or sign up to continue the booking process.
-
-![Landing Page - Call to Action](/documentation/readme_images/landing-hero-image.png)
+### Error Pages - ADD ERROR PAGE
 
 
-
-**Why a BnB Section**
-- The "Why a bed and breakfast' section gives a brief overview of why users should choose a bed and breakfast over a 'cookie cutter' hotel experience. Under that, a few of the ammenities are listed in short paragraphs with three icons of the most important features The Wine Garden has to offer.
-
-![Landing Page - Why a BnB](/documentation/readme_images/landing-why-bnb.png) -->
-
-
-
-
-
-
-### Error Pages - edit these
-
-<!-- Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
-
-![Error 404](/documentation/readme_images/error-404.png)
-
-- 404 Page Not Found - Sorry! The page you're looking for doesn't exist. Click below to return to the homepage.
-
-![Error 500](/documentation/readme_images/error-500.png)
-
-- 500 Server Error - Sorry! The Wine Garden BnB can't handle this request at the moment. Please return to the home page. -->
-
-### Future Features
-<!-- A few features were thought about mid-project as aspects that could improve the UI/UX but that were not implemented in this version of the project, either due to time contraints or simply because they were suggestions from friends / family members during the final testing phase of the project.
-
-None were original user stories and were therefore not included anywhere in the project other than in this section. They are detailed below.
-
-1. Email authentication for users on signing up. This would add another layer of authentication for users and would be an improvement on the overall website. 
-2. Have something on the My Bookings page even if you don’t have any bookings registered. As of now it's a page titled 'My bookings' but nothing is shown.
-![Empty bookings](/documentation/readme_images/empty-bookings.png)
-3. Incorporate a payment option, rates and pricing for booking. This is normally a feature of online hotel booking platforms. Taking credit card information could be a helpful aspect to implement in the future.
-4. Add photos of menu items or some food items on the breakfast page. Perhaps clicking the menu item could open a photo of it and a description of ingredients in case the user had questions of what exactly it was.
-5. If a user cancels a booking, a pop up should appear with checkboxes as to why they cancelled. This could also be a form with a textarea field to be more specific.
-6. Perhaps include a 'Book Now' button somewhere no each page of the website to facilitate easy booking.
-7. The Admin user has access to all bookings from the live site. As of now, each user has access only to their bookings from the live website. It could be helpful for the Admin superuser to be able to access everyone's bookings and have CRUD functionality on them. -->
-
-## Deployment - Heroku
+## Deployment - GitHub Pages
 
 The following steps were taken to deploy the live website from the GitHub repository:
 
 ADD STEPS HERE
 
-The site is now live and operational.
-## Forking this repository
-<!-- - Locate the repository at this link [Rick & Morty](https://github.com/Kaylaesmith1/XXX).
-- At the top of the repository, on the right side of the page, select "Fork" from the buttons available. 
-- This creates a copy of the repository -->
+The site is now live and operational. -->
 
-## Cloning this repository
-To clone this repository follow the below steps: 
-<!-- 
-1. Locate the repository at this link [Rick & Morty](https://github.com/Kaylaesmith1/XXX). 
-2. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the prefered cloning option, and then copy the link provided. 
-3. Open **Terminal**.
-4. In Terminal, change the current working directory to the desired location of the cloned directory.
-5. Type **'git clone'**, and then paste the URL previously copied from GitHub. 
-6. Type **'Enter'** to create the local clone.  -->
 
 ## Languages
 
@@ -232,12 +134,7 @@ To clone this repository follow the below steps:
 - Javascript
 
 ## Frameworks - Libraries - Programs Used 
-<!-- - [Django](https://www.djangoproject.com/): Main python framework used in the development of this project
-- [Django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html): Authentication library used to create user accounts
-- [PostgreSQL](https://www.postgresql.org/) Used as the database for this project.
-- [Heroku](https://dashboard.heroku.com/login) - Used as the cloud-based platform to deploy the site. -->
 - [Am I Responsive](https://amiresponsive.co.uk/) - Used to verify responsiveness of website on different devices.
-<!-- - [Figma](https://www.figma.com/) - Used to create wireframes for both desktop and mobile visuals. -->
 - [Favicon](https://favicon.io/) - Used to create the wine glass icon for the browser tab.
 - [Font Awesome](https://fontawesome.com/) - Used for icons on the home page and stars on the About page.
 - [GitHub](https://github.com/) - Used for version control and agile methodology.
@@ -246,15 +143,9 @@ To clone this repository follow the below steps:
 - [PEP8 Online](https://pep8ci.herokuapp.com/#) - Used to validate all Python code pages in the project.
 - [Jshint](https://jshint.com/) - Used to validate the JavaScript page.
 - [Coolors](https://coolors.co/) - Used to create color scheme.
-<!-- - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) Used to manage Django Forms
-- [Cloudinary](https://cloudinary.com/): Used to upload all images used on the website. -->
 - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/): CSS used for developing responsiveness and styling the website.
-<!-- - [Hatchful](https://hatchful.shopify.com/): Used to generate custom logo found on all pages.
-- [Wondershare](https://www.wondershare.com/): Used to style aspects of the logo (remove background).
-- [Canva](https://www.canva.com/): Used for page image banners (colored overlay and opacity) -->
 - [Google](https://www.google.com/): All images used were sourced from a Google search.
-<!-- - [EmailJS](https://www.emailjs.com/): Used to link the contact form to developer's personal email account. -->
-<!-- - [Pixelied](https://pixelied.com/features/photo-filters/convert-image-to-black-and-white): Used to convert image to black and white before using a colored overlay for banners on pages. -->
+
 
 ## Credits
 
@@ -266,12 +157,3 @@ To clone this repository follow the below steps:
 - [YouTube Video for pop up messages](https://www.youtube.com/watch?v=lRrrLCrZDxI) - Used for contact form message pop ups on successful submission and errors. 
 -  This youtube video for fetching api data: https://www.youtube.com/watch?v=zUcc4vW-jsI 
 -->
-
-
-## Acknowledgments
-<!-- 
-Special thanks to the tutoring team, specifically Joshua who helped with the contact form, Sarah who helped with implementing CRUD functionality on the live site, and Oisin who helped fix the bug of being able to book a room under a different user.
-
-Ian_alumni from the slack channel was vital to my understanding of the pathway followed for my delete buttons and getting them to work correctly. He spent time in a call with me clarifying the urls and views pathways. Thank you, Ian!
-
-Lastly, thank you, too, to my mentor Harry for sharing his project and ideas about CRUD functionality. He gave clear, concise feedback on what needed to be fixed before project submission and complemented the work overall.  -->

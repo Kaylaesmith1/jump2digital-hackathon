@@ -92,3 +92,142 @@ async function fetchCharactersByIds() {
 fetchCharactersByIds();
 
 
+    // TEST SEARCH WITH SEARCH BUTTON
+    // Function to fetch character data from the API
+    async function fetchCharacterData() {
+        try {
+            const response = await fetch('https://rickandmortyapi.com/api/character');
+            const data = await response.json();
+            return data.results;
+        } catch (error) {
+            console.error('Error fetching character data:', error);
+            return [];
+        }
+    }
+
+    // Function to create and display character cards
+    function displayCharacterCards(characters) {
+        const searchResults = document.getElementById('search-results');
+        searchResults.innerHTML = ''; // Clear previous search results
+
+        characters.forEach(character => {
+            const card = document.createElement('div');
+            // Bootstrap column classes below
+            // card.classList.add('col-md-4','mb-3');
+
+            // Populate the card with character information
+            card.innerHTML = `
+                <div class="card">
+                    <img src="${character.image}" class="card-img-top" alt="${character.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${character.name}</h5>
+                        <p class="card-text">Status: ${character.status}</p>
+                        <p class="card-text">Species: ${character.species}</p>
+                        <p class="card-text">Location: ${character.location.name}</p>
+                    </div>
+                </div>
+            `;
+
+            searchResults.appendChild(card);
+        });
+    }
+
+        // Function to reset the search and display all characters
+        function resetSearch() {
+            const searchInput = document.getElementById('search-input');
+            searchInput.value = ''; // Clear the search input
+    
+            displayCharacterCards(allCharactersData); // Display all characters
+        }
+
+    // Function to perform the search
+    async function searchCharacter() {
+        const searchInput = document.getElementById('search-input').value.toLowerCase();
+        const characters = await fetchCharacterData();
+        const matchingCharacters = characters.filter(character => character.name.toLowerCase().includes(searchInput));
+        displayCharacterCards(matchingCharacters);
+    }
+
+    // Add an event listener to trigger the search when the "Search" button is clicked
+    document.getElementById('search-button').addEventListener('click', searchCharacter);
+    // document.getElementById('reset-button').addEventListener('click', resetSearch);
+
+    // resetSearch();
+
+
+
+// TEST DISPLAY ALL CHARACTERS
+
+    let allCharactersData = []; // Store all character data
+
+    // Function to fetch all character data from the API
+    async function fetchAllCharacterData() {
+        try {
+            let allCharacters = [];
+            let page = 1;
+
+            while (true) {
+                const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${page}`);
+                const data = await response.json();
+
+                if (data.results.length === 0) {
+                    break; // No more characters to fetch
+                }
+
+                allCharacters = allCharacters.concat(data.results);
+                page++;
+            }
+
+            return allCharacters;
+        } catch (error) {
+            console.error('Error fetching character data:', error);
+            return [];
+        }
+    }
+
+    // Function to create and display character cards
+    function displayCharacterCards(characters) {
+        const searchResults = document.getElementById('search-results');
+        searchResults.innerHTML = ''; // Clear previous search results
+
+        characters.forEach(character => {
+            const card = document.createElement('div');
+            card.classList.add('col-md-4', 'mb-3'); // Bootstrap column classes
+
+            // Populate the card with character information
+            card.innerHTML = `
+                <div class="card">
+                    <img src="${character.image}" class="card-img-top" alt="${character.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${character.name}</h5>
+                        <p class="card-text">Status: ${character.status}</p>
+                        <p class="card-text">Location: ${character.location.name}</p>
+                    </div>
+                </div>
+            `;
+
+            searchResults.appendChild(card);
+        });
+    }
+
+    // Function to reset the search and display all characters
+    function resetSearch() {
+        const searchInput = document.getElementById('search-input');
+        searchInput.value = ''; // Clear the search input
+
+        displayCharacterCards(allCharactersData); // Display all characters
+    }
+
+    // Add event listeners
+    document.getElementById('search-button').addEventListener('click', searchCharacter);
+    document.getElementById('reset-button').addEventListener('click', resetSearch);
+
+    // Initial display of all characters
+    async function initialDisplay() {
+        allCharactersData = await fetchAllCharacterData(); // Fetch all character data
+        displayCharacterCards(allCharactersData); // Display all characters
+    }
+
+    // Call the initialDisplay function when the page loads
+    window.addEventListener('load', initialDisplay);
+
