@@ -1,3 +1,10 @@
+/*    NOTES:
+ 1. Searching a name shows the cards if they're in the first 20 character cards.
+ 2. Hitting reset clears everything and refreshes the page.
+ 3. Searching nothing at all and hitting the search button shows 20 cards.
+ */
+   
+   
    //FETCH ALL CHARACTERS
    const apiUrl = 'https://rickandmortyapi.com/api/character';
 
