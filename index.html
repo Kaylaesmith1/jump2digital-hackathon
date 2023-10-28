@@ -21,22 +21,31 @@
 
 
 <body>
-  <div class="container-kayla">
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="https://ca.wikipedia.org/wiki/Rick_and_Morty" rel="noopener" target="_blank">
+  <div class="container">
+  <nav class="navbar navbar-light">
+    <a class="navbar-brand" id="rick-morty" href="https://ca.wikipedia.org/wiki/Rick_and_Morty" rel="noopener" target="_blank">
       <img src="assets/images/rick-favicon.png" width="60" height="60" class="d-inline-block align-center" alt=""> Rick
       & Morty
     </a>
   </nav>
 
 
+  <!-- START OF SEARCH BAR remove if can't get working-->
+<div class="search-bar">
+  <input type="text" id="search-input" placeholder="Search by name">
+  <button id="search-button" class="btn btn-primary">Search (not working)</button>
+  <button id="reset-button" class="btn reset-button">Reset</button>
+  <div id="search-results">
+  <!-- DISPLAY SEARCH RESULTS HERE -->
+  </div>
+  </div>
+  <!-- END OF SEARCH BAR SECTION -->
 
 
-  <div class="row" id="character-container">
-    <!-- Character cards will be displayed here -->
+<!-- WORKING CARDS DISPLAY - DON'T DELETE -->
+<div id="character-container" class="row">
+  <!-- Character cards will be displayed here -->
 </div>
-
-
 
 
 

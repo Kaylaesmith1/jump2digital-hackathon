@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Creepster&family=Lato&family=Montserrat&family=Roboto&display=swap');
+
 body {
     background-color: #93B5C6;
     /* background-color: #81DAE8; */
@@ -8,16 +10,39 @@ body {
     min-height: 100vh;
 }
 
-.container-kayla {
-    background-color: red;
-}
-
 .row {
     margin: 0;
 }
 
-.rick-morty,
-h1 {
+.search-bar {
+    background-color: #00393F;
+    text-align: center;
+    padding: 10px;
+    border-radius: 35px;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#search-input {
+    line-height: 2;
+    border-radius: 6px;
+    background-color: #93B5C6;
+}
+
+.reset-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #00393F;
+    background-color: #16FB1F;
+    border-color: #16FB1F;
+    letter-spacing: 1px;
+}
+
+#rick-morty,
+.card-title{
+    font-family: 'Bangers', sans-serif;
+    font-size: 40px;
     color: #00393F;
 
 }
@@ -32,25 +57,23 @@ hr {
 }
 
 .card {
-    border: 3px solid #16fb1f;
+    border: 5px solid #16fb1f;
     background-color: #CFF9FF;
     border-radius: 8px;
-    box-shadow: 4px 4px 10px 0 rgba(0, 57, 63, 0.2);
+    box-shadow: 4px 4px 10px 6px rgba(0, 57, 63, .7);
     transition: 0.2s;
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 10px;
 }
 
-.card-img {
+.card-img-top {
     object-fit: cover;
     height: 100%;
+    border-radius: 50%;
 }
 
-/* .card-learn {
-    margin: 0;
-} */
 
 
 /* FOOTER START */

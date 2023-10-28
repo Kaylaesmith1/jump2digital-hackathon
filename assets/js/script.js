@@ -1,8 +1,11 @@
+let allCharactersData = [];
+
 // Function to fetch and display characters
 async function fetchCharacters() {
     const charactersPerPage = 20;
     let page = 1; // Start with page 1
     let allCharacters = []; // Array to store all characters
+
 
     try {
         while (true) {
