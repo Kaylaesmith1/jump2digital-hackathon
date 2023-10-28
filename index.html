@@ -1,11 +1,4 @@
-<!-- NOTES:
- 1. Searching a name shows the cards if they're in the first 20 character cards.
- 2. Hitting reset clears everything and refreshes the page.
- 3. Searching nothing at all and hitting the search button shows 20 cards.
-  -->
-
-  
- <!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -26,26 +19,25 @@
 </head>
 
 
+
 <body>
+  <div class="container-kayla">
   <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="https://www.youtube.com/watch?v=BKYJ5AIOU9I" rel="noopener" target="_blank">
+    <a class="navbar-brand" href="https://ca.wikipedia.org/wiki/Rick_and_Morty" rel="noopener" target="_blank">
       <img src="assets/images/rick-favicon.png" width="60" height="60" class="d-inline-block align-center" alt=""> Rick
       & Morty
     </a>
   </nav>
 
-  <h1 class="text-center">Llista de personatges</h1>
 
 
-  <!-- START OF SEARCH BAR -->
-  <div class="container">
-    <input type="text" id="search-input" placeholder="Search by name">
-    <button id="search-button" class="btn btn-primary">Working search</button>
-    <button id="reset-button" class="btn btn-secondary">Reset</button>
-    <div id="search-results" class="mt-3 row">
-      <!-- DISPLAY SEARCH RESULTS HERE -->
-    </div>
-  </div>
+
+  <div class="row" id="character-container">
+    <!-- Character cards will be displayed here -->
+</div>
+
+
+
 
 
   <!-- START FOOTER -->
@@ -79,6 +71,8 @@
 
   <!-- LINK JAVASCRIPT FILE -->
   <script src="assets/js/script.js"></script>
+
+</div>
 
 </body>
 
