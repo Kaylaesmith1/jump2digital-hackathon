@@ -2,7 +2,7 @@ let allCharactersData = [];
 
 // Function to fetch and display characters
 async function fetchCharacters() {
-    const charactersPerPage = 20;
+    // const charactersPerPage = 20;
     let page = 1; // Start with page 1
     let allCharacters = []; // Array to store all characters
 
@@ -82,18 +82,17 @@ async function fetchCharacters() {
     }
 }
 
-// Ensure the DOM is fully loaded before calling the fetchCharacters function
+// Load DOM fully before fetchCharacters function called
 document.addEventListener('DOMContentLoaded', fetchCharacters);
 
 
 
 
 // SCROLL TO TOP FUNCTION
-// Get a reference to the scroll-to-top button and the scroll-button
 const scrollToTopButton = document.getElementById('scroll-top');
 const scrollButton = document.getElementById('scroll-button');
 
-// Function to check the scroll position and show/hide the button
+// Show / hide button at 1000px
 function toggleScrollToTopButton() {
     if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
         scrollToTopButton.style.display = 'block';
@@ -102,14 +101,62 @@ function toggleScrollToTopButton() {
     }
 }
 
-// Function to scroll to the top of the page
+// Return to top of page
 function scrollToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
 
-// Add an event listener to toggle the button visibility when scrolling
+// EventListener: toggles button visibility when scrolling
 window.addEventListener('scroll', toggleScrollToTopButton);
 
-// Add an event listener to scroll to the top when the button is clicked
+// EventListener: scroll to top when clicked
 scrollButton.addEventListener('click', scrollToTop);
+
+
+
+
+// TEST SEARCH
+// Function to filter and display characters based on search input
+function filterCharacters() {
+    const searchInput = document.getElementById('search-input').value.toLowerCase();
+    const characterCards = document.querySelectorAll('.character-card');
+  
+    characterCards.forEach(card => {
+      const characterName = card.querySelector('.card-title').textContent.toLowerCase();
+      if (characterName.includes(searchInput)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function resetCharacters() {
+    const characterCards = document.querySelectorAll('.character-card');
+
+    characterCards.forEach(card => {
+      card.style.display = 'block';
+    });
+  
+    // Clear the search input
+    document.getElementById('search-input').value = '';
+  }
+  
+
+  // EventListener: Listen for input changes in the search bar
+  const searchInput = document.getElementById('search-input');
+  const searchButton = document.getElementById('search-button');
+
+  const resetButton = document.getElementById('reset-button');
+
+  searchButton.addEventListener('click', filterCharacters);
+  resetButton.addEventListener('click', resetCharacters);
+
+  // Optionally, you can also trigger the search when the Enter key is pressed in the input field.
+  searchInput.addEventListener('keydown', event => {
+    if (event.key === 'Enter') {
+      filterCharacters();
+    }
+  });
+  
