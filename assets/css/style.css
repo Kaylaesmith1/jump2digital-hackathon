@@ -19,7 +19,7 @@ body {
     text-align: center;
     padding: 10px;
     border-radius: 35px;
-    max-width: 85%;
+    max-width: 90%;
     margin: 0 auto;
     margin-bottom: 15px;
 }
@@ -27,16 +27,17 @@ body {
 #search-input {
     line-height: 2;
     border-radius: 6px;
-    background-color: #93B5C6;
 }
 
-.reset-button {
+.reset-button, 
+.search-button {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #00393F;
     background-color: #16FB1F;
     border-color: #16FB1F;
     letter-spacing: 1px;
+    margin: 0 10px 0 10px;
 }
 
 #rick-morty,
@@ -84,7 +85,17 @@ hr {
 }
 
 #scroll-button {
-    padding: 10px 20px;
+    padding: 15px 15px;
+    /* background-color: #16FB1F; */
+    background-color: #026534;
+    border: 3px solid #00393F;
+    border-radius: 35px;
+}
+
+.octo-con {
+    font-size: 2rem;
+    /* color: #CFF9FF; */
+    color: #16FB1F;
 }
 
 

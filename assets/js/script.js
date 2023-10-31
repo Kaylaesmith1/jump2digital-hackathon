@@ -126,6 +126,7 @@ function filterCharacters() {
       const characterName = card.querySelector('.card-title').textContent.toLowerCase();
       if (characterName.includes(searchInput)) {
         card.style.display = 'block';
+        
       } else {
         card.style.display = 'none';
       }
