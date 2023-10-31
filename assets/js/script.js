@@ -84,3 +84,32 @@ async function fetchCharacters() {
 
 // Ensure the DOM is fully loaded before calling the fetchCharacters function
 document.addEventListener('DOMContentLoaded', fetchCharacters);
+
+
+
+
+// SCROLL TO TOP FUNCTION
+// Get a reference to the scroll-to-top button and the scroll-button
+const scrollToTopButton = document.getElementById('scroll-top');
+const scrollButton = document.getElementById('scroll-button');
+
+// Function to check the scroll position and show/hide the button
+function toggleScrollToTopButton() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        scrollToTopButton.style.display = 'block';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+}
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+// Add an event listener to toggle the button visibility when scrolling
+window.addEventListener('scroll', toggleScrollToTopButton);
+
+// Add an event listener to scroll to the top when the button is clicked
+scrollButton.addEventListener('click', scrollToTop);

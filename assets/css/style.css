@@ -74,6 +74,18 @@ hr {
     border-radius: 50%;
 }
 
+/* SCROLL TO TOP BUTTON */
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+#scroll-button {
+    padding: 10px 20px;
+}
 
 
 /* FOOTER START */
