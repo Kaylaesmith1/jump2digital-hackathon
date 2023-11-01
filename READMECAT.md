@@ -10,7 +10,7 @@ La documentació a sota s'entrega com a part de la meva prova per participar a l
 ![Disseny responsiu](/documentation/readme_images/amiresponsive.png)
 
 
-## Taula de continguts
+## Taula de Continguts
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
@@ -29,31 +29,39 @@ A sota de la capçalera hi ha el cercador amb un camp de cerca on l'usuari pot b
 
 El peu de pàgina inclou enllaços personals a la pàgina de LinkedIn i al perfil de GitHub de la creadora. El tercer enllaç s'obre a un tràiler de YouTube del programa de televisió Rick & Morty.
 
-<!-- 
-#### Color Scheme
+
+#### Esquema de Colors
+L'esquema de colors es va triar basant-se al document en PDF rebut de Jump2Digital i s'hi va adaptar lleugerament per ajustar-se a la visió personal de la creadora del lloc web utilitzant [Coolers](https://coolors.co/).
+
+Totes les combinacions de colors utilitzades il·lustren un contrast entre el fons i el text per assegurar una accessibilitat màxima per a qualsevol usuari. Els colors més foscos s'utilitzen per al text: titulars, informació de les targetes de personatge, etc., mentre que els colors més clars s'utilitzen com a fons amb els verds brillants com a detalls.
+
+Fent servir aquesta paleta de colors, no hi va haver problemes de contrast quan la web va ser avaluada amb Wave.
 
 ![Color Palette](/assets/images/color-scheme2.png)
 
 
-#### Imagery
-Why these images / where from? Include favicon and navbar 'logo'.
+#### Imatges
+Les imatges utilitzades en aquesta web inclouen un senzill logotip a la pàgina d'inici i un favicon per la pestanya del navegador, que es van obtenir a través d'una simple cerca a Google. També es van utilitzar icones pels enllaços del peu de pàgina i el botó 'tornar a dalt', que es van obtenir de [Font Awesome](https://fontawesome.com/icons).
+
+Totes les altres imatges, com ara els avatars dels personatges, es van obtenir a través de l'API pública facilitada per Jump2Digital.
  
+#### Tipus de lletra
+La font 'Bangers' és la font principal utilitzada a la pàgina per als titulars i els títols de les targetes, mentre que 'Roboto' es fa servir pels botons "Search" i "Reset" i per la informació dels personatges, així com per tot el cos de la pàgina web.
 
-#### Fonts
-The 'XX' font is the main font used on the page, while 'XX' in a bolder weight was used for the navbar and 'XX' for other accent areas. The 'Sans-serif' font is noted as a backup and will be used in the event that the main fonts aren't imported correctly to the site. These font styles were chosen for their ease of legibility and general letter spacing and were imported from [Google Fonts](https://fonts.google.com/).
+La font 'Sans-serif' està indicada com a alternativa i s'utilitzarà en cas que les fonts principals no s'importin correctament a la pàgina. Aquestes fonts es van triar per la seva facilitat de llegibilitat i l'espaiat general de les lletres i es van importar de [Google Fonts](https://fonts.google.com/). 
 
 
-## Testing
+<!-- ## Testing
 
 
 ## Features
 
 
 ### Error Pages - ADD ERROR PAGE
--->
+ -->
 
 
-## Deployment
+## Desplegament
 
 Es van fer els passos següents per publicar aquesta pàgina web en directe des del dipòsit de GitHub mitjançant <strong>GitHub Pages</strong>:
 
@@ -69,14 +77,14 @@ Es van fer els passos següents per publicar aquesta pàgina web en directe des 
 
 ![Desplega GitHub Pages](/assets/images/deploy-pages-cat.png)
 
-<!--
-## Languages Used
 
-- Python
+## Llengües Utilitzades
+
 - HTML
 - CSS
 - Javascript
 
+<!--
 ## Frameworks - Libraries - Programs Used 
 - [Am I Responsive](https://amiresponsive.co.uk/) - Used to verify responsiveness of website on different devices.
 - [Favicon](https://favicon.io/) - Used to create the wine glass icon for the browser tab.

@@ -7,11 +7,11 @@ Please find documentation below regarding my test submitted for participation in
 <!-- A link to the live site can be found [here](https://kaylaesmith1.github.io/jump2digital-hackathon/). -->
 
 
-![Responsive site design](/documentation/readme_images/amiresponsive.png)
+<!-- ![Responsive site design](/documentation/readme_images/amiresponsive.png)
 
 
 ## Table of Contents
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small> -->
 
 
 ## User Experience (UX)
@@ -31,33 +31,33 @@ Below the header is the search bar with a search field where the user can search
 The footer includes personal links to the creator's LinkedIn page and GitHub profile. The third link opens to a YouTube trailer of the Rick & Morty TV show.
 
 #### Color Scheme
-<!-- The color palette was created using the palette generator [Coolers](https://coolors.co/).
 
+The color scheme was chosen based on the pdf prompt given by Jump2Digital and adapted slightly to fit the creator's personal vision of the site using [Coolers](https://coolors.co/). 
 
-WHY CHOSE THIS COLOR SCHEME?
+All combinations of colors used illustrate a contrast between the background and text to ensure maximum user accessibility. The darker colors were used for text: headers, character card information, etc, while the lighter colors were used as backgrounds with the bright greens as accents.
 
-
-All combinations of the colors used illustrate a contrast between background and text to ensure maximum user accessibility.
-
+Using this color palette, there were no contrast errors when the site was put through Wave.
 
 ![Color Palette](/assets/images/color-scheme2.png)
 
 
 #### Imagery
-Why these images / where from? Include favicon and navbar 'logo'.
+
+The imagery included on this site was a simple logo on the homepage, a favicon for the browser tab, which were obtained from a simple google search. Icons were also used for the footer links and the 'back to top' button and were obtained from [Font Awesome](https://fontawesome.com/icons).
+
+All other imagery, eg: character avatars, was obtained through the public API facilitated by Jump2Digital.
  
 
 #### Fonts
-The 'XX' font is the main font used on the page, while 'XX' in a bolder weight was used for the navbar and 'XX' for other accent areas. The 'Sans-serif' font is noted as a backup and will be used in the event that the main fonts aren't imported correctly to the site. These font styles were chosen for their ease of legibility and general letter spacing and were imported from [Google Fonts](https://fonts.google.com/). -->
+
+The 'Bangers' font is the main font used on the page for headers and card titles, while 'Roboto' is used for the "Search" and "Reset" buttons and other character information, as well as the entire body of the website. 
+
+The 'Sans-serif' font is noted as a backup and will be used in the event that the main fonts aren't imported correctly to the site. These font styles were chosen for their ease of legibility and general letter spacing and were imported from [Google Fonts](https://fonts.google.com/). 
+
+<!-- ## Testing
 
 
-## Testing
-
-
-## Features
-
-
-### Error Pages - ADD ERROR PAGE
+### Error Pages - ADD ERROR PAGE -->
 
 
 ## Deployment
