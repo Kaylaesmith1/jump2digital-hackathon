@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato&family=Montserrat&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato&family=Montserrat&family=Roboto&display=swap');
 
 
 body {
@@ -16,6 +15,7 @@ body {
     margin: 0;
 }
 
+/* SEARCH BAR */
 .search-bar {
     background-color: #CFF9FF;
     border: 4px solid #16FB1F;
@@ -36,10 +36,11 @@ body {
 
 .reset-button,
 .search-button {
+    font-family: 'Bangers', sans-serif;
     font-size: 16px;
     color: #CFF9FF;
     background-color: #00393F;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin: 0 8px 0 8px;
     border-radius: 8px;
 }
@@ -50,20 +51,13 @@ body {
     background-color: #93B5C6;
 }
 
+/* CHARACTER CARDS */
 #rick-morty,
 .card-title {
     font-family: 'Bangers', sans-serif;
     font-size: 40px;
     color: #00393F;
     text-align: center;
-}
-
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 5px;
-    height: 2px;
-    background-color: #00393F;
 }
 
 .card {
@@ -84,6 +78,13 @@ hr {
     border-radius: 50%;
 }
 
+.card-text-headings {
+    font-family: 'Bangers', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #00393F;
+}
+
 /* SCROLL TO TOP BUTTON */
 .scroll-top {
     display: none;
@@ -94,10 +95,10 @@ hr {
 }
 
 #scroll-button {
-    padding: 15px 15px;
+    padding: 10px 10px;
     background-color: #00393F;
     border: 3px solid #16FB1F;
-    border-radius: 35px;
+    border-radius: 50%;
     margin-left: 10px;
 }
 
@@ -107,7 +108,7 @@ hr {
 }
 
 .octo-con {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #16FB1F;
 }
 
@@ -148,6 +149,7 @@ ul {
         width: 50%;
     }
 }
+
 @media only screen and (max-width : 510px) {
 
     .search-button,
@@ -170,5 +172,5 @@ ul {
     .search-button,
     .reset-button {
         padding: 6px;
-}
+    }
 }
