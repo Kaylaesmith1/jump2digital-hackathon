@@ -29,13 +29,14 @@ async function fetchCharacters() {
 
         // Loop through each character in the data
         allCharacters.forEach(character => {
+
             // Create a Bootstrap column div for the character card
             const cardCol = document.createElement('div');
             cardCol.classList.add('col-12', 'col-md-6', 'col-lg-4');
-
+            
             // Create a card element for the character
             const card = document.createElement('div');
-            card.classList.add('character-card', 'card'); // You can style this class in CSS
+            card.classList.add('character-card', 'card');
 
             // Create an image element for the character's avatar
             const avatar = document.createElement('img');
@@ -116,7 +117,7 @@ scrollButton.addEventListener('click', scrollToTop);
 
 
 
-// TEST SEARCH
+// SEARCH A CHARACTER
 // Function to filter and display characters based on search input
 function filterCharacters() {
     const searchInput = document.getElementById('search-input').value.toLowerCase();

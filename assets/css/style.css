@@ -165,10 +165,10 @@ ul {
 }
 
 
-/* @media only screen and (max-width: 310px) {
+@media only screen and (max-width: 380px) {
 
-#search-input {
-    width: 40%;
-    padding-left: 0px;
+    .search-button,
+    .reset-button {
+        padding: 6px;
 }
-} */
+}
