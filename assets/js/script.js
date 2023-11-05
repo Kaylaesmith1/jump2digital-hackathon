@@ -115,24 +115,25 @@ function filterCharacters() {
 
   characterCards.forEach(card => {
     const characterName = card.querySelector('.card-title').textContent.toLowerCase();
+    const cardContainer = card.parentElement;
+
     if (characterName.includes(searchInput)) {
-      card.style.display = 'block';
+      cardContainer.style.display = 'block';
 
     } else {
-      card.style.display = 'none';
+      cardContainer.style.display = 'none';
     }
   });
 }
 
 function resetCharacters() {
-  const characterCards = document.querySelectorAll('.character-card');
-
-  characterCards.forEach(card => {
-    card.style.display = 'block';
+  const cardContainers = document.querySelectorAll('.col-12, .col-md-6, .col-lg-4');
+  cardContainers.forEach(container => {
+    container.style.display = 'block';
   });
-
   document.getElementById('search-input').value = '';
 }
+
 
 //EventListener: search / reset
 const searchInput = document.getElementById('search-input');

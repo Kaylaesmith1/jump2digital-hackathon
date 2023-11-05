@@ -70,12 +70,15 @@ body {
     display: flex;
     flex-direction: column;
     margin: 10px;
+    min-height: 592px;
 }
 
 .card-img-top {
     object-fit: cover;
     height: 100%;
     border-radius: 50%;
+    width: 95%;
+    margin: 2.5%
 }
 
 .card-text-headings {
