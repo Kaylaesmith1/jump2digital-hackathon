@@ -4,14 +4,27 @@ To read this documentation in English, click [here](/README.md).
 
 La documentació a sota s'entrega com a part de la meva prova per participar a l'hackató de Jump2Digital.
 
-<!-- L'enllaç per veure la web a l'entorn real es pot trobar [aquí](https://kaylaesmith1.github.io/jump2digital-hackathon/). -->
+L'enllaç per veure la web a l'entorn real es pot trobar [aquí](https://kaylaesmith1.github.io/jump2digital-hackathon/).
 
 
-![Disseny responsiu](/documentation/readme_images/amiresponsive.png)
+![Disseny responsiu](/assets/images/amiresponsive.png)
 
 
 ## Taula de Continguts
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+- [Prova pel 'Rick & Morty Hackató'](#prova-pel--rick---morty-hackat--)
+  * [Taula de Continguts](#taula-de-continguts)
+  * [Experiència de l'usuari (UX)](#experi-ncia-de-l-usuari--ux-)
+    + [Disseny](#disseny)
+      - [Esquema de Colors](#esquema-de-colors)
+      - [Imatges](#imatges)
+      - [Tipus de lletra](#tipus-de-lletra)
+  * [Proves](#proves)
+  * [Desplegament](#desplegament)
+  * [Llengües Utilitzades](#lleng-es-utilitzades)
+  * [Frameworks - Biblioteques - Programes utilitzats](#frameworks---biblioteques---programes-utilitzats)
+  * [Bugs](#bugs)
+  * [Implementacions al futur](#implementacions-al-futur)
+  * [Crèdits](#cr-dits)
 
 
 ## Experiència de l'usuari (UX)
@@ -20,12 +33,13 @@ Aquesta web es va construir com a prova per poder participar en un hackató amb 
 No obstant això, per a qualsevol usuari, la pàgina ha de veure's bé a totes les mides de dispositiu, ha d'estar disponible en diversos navegadors, ser fàcilment llegible, colorit i reflectir el tema de "Rick i Morty". He intentat assolir cadascun d'aquests objectius mitjançant el disseny de la pàgina i l'esquema de colors, informació sobre la qual es pot trobar a continuació.
 
 ### Disseny
-
 El disseny de la web s'estableix en forma senzilla de paràgrafs mitjançant targetes del caràcters, que pretenen facilitar la navegació de l'usuari. Es recullen de l'API alguns aspectes de la informació disponible de cada personatge i s'hi mostren en una targeta de personatge. Es va crear un botó "Tornar a dalt" per oferir l'usuari una manera ràpida de tornar al principi de la pàgina.
 
 La capçalera inclou un logotip de Rick que, en clicar, portarà l'usuari a la pàgina de la Viquipèdia de Rick & Morty en català.
 
-A sota de la capçalera hi ha el cercador amb un camp de cerca on l'usuari pot buscar caràcters per nom. Es troba també els botons "Buscar" i "Restablir".
+Just a sota de la capçalera es troba la barra de cerca amb un camp de cerca on l'usuari pot cercar personatges pel seu nom i un botó de 'Restablir'. La cerca funciona en temps real; a mesura que l'usuari escriu un nom, la cerca s'actualitzarà per mostrar tots els personatges que coincideixen amb aquest nom. D'altra banda, en esborrar qualsevol lletra s'actualitzaran les targetes de personatge mostrades. 
+
+Tot i que considero que un botó de 'Cerca' seria redundat, he decidit incloure un botó de 'Restablir' per facilitar l'experiència de l'usuari i netejar el camp amb només un clic, en lloc de haver de mantenir premuda la tecla d'esborrat.
 
 El peu de pàgina inclou enllaços personals a la pàgina de LinkedIn i al perfil de GitHub de la creadora. El tercer enllaç s'obre a un tràiler de YouTube del programa de televisió Rick & Morty.
 
@@ -51,15 +65,23 @@ La font 'Bangers' és la font principal utilitzada a la pàgina per als titulars
 La font 'Sans-serif' està indicada com a alternativa i s'utilitzarà en cas que les fonts principals no s'importin correctament a la pàgina. Aquestes fonts es van triar per la seva facilitat de llegibilitat i l'espaiat general de les lletres i es van importar de [Google Fonts](https://fonts.google.com/). 
 
 
-<!-- ## Testing
+## Proves 
+Les proves es van realitzar pel creador en diversos tamanys de dispositius i en Chrome, Firefox i Safari (ordinador portàtil i iPhone). Uns amics també van provar l'aplicació en els seus dispositius personals i van informar d'una experiència fluïda i amigable amb tots els aspectes interactius funcionant correctament.
 
+La validació es va realitzar a les pàgines HTML, CSS i JavaScript, i Wave es va utilitzar per validar la web sencera. Els resultats d'aquestes proves són els següents:
 
-## Features
+<strong>HTML</strong>
+![Validació HTML](/assets/images/validate-html.png)
 
+<strong>CSS</strong>
+![Validació CSS](/assets/images/validate-css.png)
 
-### Error Pages - ADD ERROR PAGE
- -->
+<strong>JavaScript</strong>
+![Validació JavaScript](/assets/images/validate-js.png)
+<strong>Wave</strong>
+![WValidació Wave](/assets/images/validate-wave.png)
 
+En la validació del lloc amb Wave, es mostra un error. Per crear el botó amb l'estil desitjat, vaig deixar intencionadament el botó buit i vaig col·locar les paraules 'Cap amunt' a sota com un fragment de text. Per tant, el botó en si mateix es manté buit, cosa que apareix com un error en Wave. Vaig optar per deixar aquest error tal qual ja que no afecta la funcionalitat de la pàgina en si.
 
 ## Desplegament
 
@@ -84,32 +106,49 @@ Es van fer els passos següents per publicar aquesta pàgina web en directe des 
 - CSS
 - Javascript
 
-<!--
-## Frameworks - Libraries - Programs Used 
-- [Am I Responsive](https://amiresponsive.co.uk/) - Used to verify responsiveness of website on different devices.
-- [Favicon](https://favicon.io/) - Used to create the wine glass icon for the browser tab.
-- [Font Awesome](https://fontawesome.com/) - Used for icons on the home page and stars on the About page.
-- [GitHub](https://github.com/) - Used for version control and agile methodology.
-- [Google Fonts](https://fonts.google.com/) - Imported and used to change fonts on pages from default fonts.
-- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
-- [PEP8 Online](https://pep8ci.herokuapp.com/#) - Used to validate all Python code pages in the project.
-- [JSHint](https://jshint.com/) - Used to validate the JavaScript page.
-- [Coolors](https://coolors.co/) - Used to create color scheme.
-- [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/): CSS used for developing responsiveness and styling the website.
-- [Google](https://www.google.com/): All images used were sourced from a Google search.
+
+## Frameworks - Biblioteques - Programes utilitzats
+- [Am I Responsive](https://amiresponsive.co.uk/) - Utilitzat per verificar el 'responsiveness' del lloc web en diferents dispositius.
+- [Favicon](https://favicon.io/) - Utilitzat per crear la ícona per a la pestanya de navegador.
+- [Font Awesome](https://fontawesome.com/) - Utilitzat per al peu de pàgina i el botó "Cap a munt".
+- [GitHub](https://github.com/) - Usat per allotjar el repositori del projecte.
+- [Google Fonts](https://fonts.google.com/) - Importat i utilitzat per estilitzar els tipus de lletra a la pàgina.
+- [W3C](https://www.w3.org/) - Usat per la validació del HTML & CSS.
+- [JSHint](https://jshint.com/) - Usat per la validació de la pàgina JS.
+- [Coolors](https://coolors.co/) - Utilitzat per crear l'esquema de colors.
+- [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/): CSS utilitzat per desenvolupar el 'responsiveness' i el disseny del lloc web.
+- [Google](https://www.google.com/): Les imatges utilitzades provenen d'una cerca de Google.
 
 
 ## Bugs
+Es van identificar i posteriorment es van solucionar dues errades:
 
-## Future Implementations
+1. <strong>Alçada de les targetes</strong>
+![BUG: alçada de les targetes](/assets/images/BUG-card-height.png)
+Afegir una alçada mínima al CSS de la classe 'card' va solucionar aquest problema i ara totes les targetes tenen la mateixa alçada.
 
-## Credits
+2. <strong>Disseny de la cerca de personatges</strong>
+![BUG: disseny de cerca](/assets/images/BUG-search-layout.png)
+Hi va haver un problema amb el disseny de les targetes quan es buscava un personatge. En lloc que les targetes coincidents es mostrassin en files ordenades, les targetes que no coincidien quedaven ocultes però ocupaven l'espai original. Aquest problema es va solucionar creant un altre contenidor en el fitxer JS.
 
+Segons el meu coneixement, no hi ha errades existents al lloc web.
+
+## Implementacions al futur
+Hi ha un parell d'aspectes que es podrien implementar en futures versions d'aquest projecte per millorar l'experiència de l'usuari, els quals s'expliquen a continuació:
+
+1. Tot i que no era un requisit per a aquest projecte, tenir una pàgina d'error 404 amb un botó per tornar l'usuari a la pàgina d'inici seria una millora. Ara mateix, si l'usuari es troba en una pàgina errònia, es mostra la pàgina d'error 404 per defecte de GitHub i l'usuari ha de clicar físicament al botó 'enrere' per tornar a la pàgina web activa.
+
+2. Actualment, si un usuari fa errors d'escriptura en un nom o no hi ha cap targeta a la base de dades que coincideixi amb aquest nom, no es mostra cap informació. Seria útil tenir un missatge d'error o un missatge emergent que alerti l'usuari de l'errada possible en l'escriptura o l'animi a provar un altre nom de personatge.
+
+## Crèdits
+
+- [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/) s'utilitzaven per a implementacions estilístiques.
+- Aquest [vídeo de YouTube](https://www.youtube.com/watch?v=zUcc4vW-jsI) per ajudar a entendre com obtenir les dades de l'API.
+
+S'han utilitzat els llocs web següents per solucionar problemes:
 - [W3Schools](https://www.w3schools.com/)
-- [Django Docs](https://docs.djangoproject.com/en/4.0/)
-- [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-- [Stack Overflow](https://stackoverflow.com/)
-- [Code Institute - Blog Walkthrough Project](https://github.com/Code-Institute-Solutions/Django3blog)
-- [YouTube Video for pop up messages](https://www.youtube.com/watch?v=lRrrLCrZDxI) - Used for contact form message pop ups on successful submission and errors. 
--  This youtube video for fetching api data: https://www.youtube.com/watch?v=zUcc4vW-jsI -->
+- [Stack Overflow](https://stackoverflow.com/) 
+- [Chat GPT](https://chat.openai.com/)
+
+Durant la fase de proves, una amiga i companya, la Mia, va ser vital per ajudar a corregir l'alçada de les targetes i els errors de disseny amb la cerca. Moltes gràcies, Mia!
 

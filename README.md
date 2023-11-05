@@ -4,14 +4,27 @@ Per llegir la documentació d'aquest projecte en català, cliqueu [aquí](/READM
 
 Please find documentation below regarding my test submitted for participation in the Jump2Digital Hackathon. 
 
- <!-- A link to the live site can be found [here](https://kaylaesmith1.github.io/jump2digital-hackathon/).
+ A link to the live site can be found [here](https://kaylaesmith1.github.io/jump2digital-hackathon/).
 
 
-[Responsive site design](/documentation/readme_images/amiresponsive.png)
+![Responsive site design](/assets/images/amiresponsive.png)
 
 
 ## Table of Contents
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small> -->
+- [Rick & Morty Hackathon Test](#rick---morty-hackathon-test)
+  * [Table of Contents](#table-of-contents)
+  * [User Experience (UX)](#user-experience--ux-)
+    + [Design](#design)
+      - [Color Scheme](#color-scheme)
+      - [Imagery](#imagery)
+      - [Fonts](#fonts)
+  * [Testing](#testing)
+  * [Deployment](#deployment)
+  * [Languages Used](#languages-used)
+  * [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+  * [Bugs](#bugs)
+  * [Future Implementations](#future-implementations)
+  * [Credits](#credits)
 
 
 ## User Experience (UX)
@@ -119,7 +132,13 @@ There was an issue with the card layout when a character was searched. Instead o
 
 To my knowledge, there are no existing bugs on the website. 
 
-<!-- ## Future Implementations -->
+
+## Future Implementations
+There are a couple of aspects that could be implemented in future versions of this project to improve the user experience, which are outlined below:
+
+1. Though it wasn't a requirement for this project, having a 404 error page with a button to return the user to the homepage would be an improvement. At the moment, if the user finds themself on an erroneous page, the default GitHub 404 page is shown and the user has to physically click the 'back' button to be returned to the live site.  
+
+2. Currently, if a user misspells a name or there are no cards in the database matching that name, no information is shown. It would be helpful to have an error message or a pop-up message alerting the user of the potential spelling mistake or to try a different character name. 
 
 ## Credits 
 - [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/) were used for stylistic implementations.
@@ -131,5 +150,3 @@ The following websites were used for troubleshooting:
 - [Chat GPT](https://chat.openai.com/)
 
 During the testing phase, a friend and colleague, Mia, was vital in helping fix card height and search layout bugs. Thanks, Mia!
-
-
