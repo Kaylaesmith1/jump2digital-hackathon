@@ -135,11 +135,9 @@ function resetCharacters() {
 
 //EventListener: search / reset
 const searchInput = document.getElementById('search-input');
-const searchButton = document.getElementById('search-button');
-
 const resetButton = document.getElementById('reset-button');
 
-searchButton.addEventListener('click', filterCharacters);
+searchInput.addEventListener('input', filterCharacters);
 resetButton.addEventListener('click', resetCharacters);
 
 //Click 'Enter' to search

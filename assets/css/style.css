@@ -34,8 +34,7 @@ body {
     padding-left: 12px;
 }
 
-.reset-button,
-.search-button {
+.reset-button {
     font-family: 'Bangers', sans-serif;
     font-size: 16px;
     color: #CFF9FF;
@@ -45,14 +44,12 @@ body {
     border-radius: 8px;
 }
 
-.reset-button:hover,
-.search-button:hover {
+.reset-button:hover {
     color: #00393F;
     background-color: #93B5C6;
 }
 
 /* CHARACTER CARDS */
-
 #rick-morty,
 .card-title {
     font-family: 'Bangers', sans-serif;
@@ -155,7 +152,6 @@ ul {
 
 @media only screen and (max-width : 510px) {
 
-    .search-button,
     .reset-button {
         margin: 0;
     }
@@ -163,7 +159,6 @@ ul {
 
 @media only screen and (max-width : 430px) {
 
-    .search-button,
     .reset-button {
         font-size: 10px;
     }
@@ -171,7 +166,6 @@ ul {
 
 @media only screen and (max-width: 380px) {
 
-    .search-button,
     .reset-button {
         padding: 6px;
     }

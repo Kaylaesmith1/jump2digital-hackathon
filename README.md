@@ -26,7 +26,7 @@ The website design is set in simple, paragraph form using character cards, which
 
 The header includes a Rick logo that, on clicking, will take the reader to the Rick & Morty Wikipedia page in Catalan.
 
-Below the header is the search bar with a search field where the user can search characters by name, as well as 'Search' and 'Reset' buttons. 
+Below the header is the search bar with a search field where the user can search characters by name and 'Reset' button. The search works in real-time; as a user writes a name, the search will update to show all characters matching that name. Conversely, deleting any letters will update the character cards shown. Though I feel a 'Search' button would be redundant, I decided to include a 'Reset' button to facilitate the user-experience and clear the field with just one click rather than having to hold down the delete key.
 
 The footer includes personal links to the creator's LinkedIn page and GitHub profile. The third link opens to a YouTube trailer of the Rick & Morty TV show.
 
@@ -40,13 +40,11 @@ Using this color palette, there were no contrast errors when the site was put th
 
 ![Color Palette](/assets/images/color-scheme2.png)
 
-
 #### Imagery
 
 The imagery included on this site was a simple logo on the homepage, a favicon for the browser tab, which were obtained from a simple google search. Icons were also used for the footer links and the 'back to top' button and were obtained from [Font Awesome](https://fontawesome.com/icons).
 
 All other imagery, eg: character avatars, was obtained through the public API facilitated by Jump2Digital.
- 
 
 #### Fonts
 
