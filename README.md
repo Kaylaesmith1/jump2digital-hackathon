@@ -4,10 +4,10 @@ Per llegir la documentació d'aquest projecte en català, cliqueu [aquí](/READM
 
 Please find documentation below regarding my test submitted for participation in the Jump2Digital Hackathon. 
 
-<!-- A link to the live site can be found [here](https://kaylaesmith1.github.io/jump2digital-hackathon/). -->
+ <!-- A link to the live site can be found [here](https://kaylaesmith1.github.io/jump2digital-hackathon/).
 
 
-<!-- ![Responsive site design](/documentation/readme_images/amiresponsive.png)
+[Responsive site design](/documentation/readme_images/amiresponsive.png)
 
 
 ## Table of Contents
@@ -54,10 +54,22 @@ The 'Bangers' font is the main font used on the page for headers and card titles
 
 The 'Sans-serif' font is noted as a backup and will be used in the event that the main fonts aren't imported correctly to the site. These font styles were chosen for their ease of legibility and general letter spacing and were imported from [Google Fonts](https://fonts.google.com/). 
 
-<!-- ## Testing
+## Testing
 
+Testing was done by the creator on various device sizes and on Chrome, Firefox and Safari (laptop and iphone). Friends also tested the application on their personal devices and reported a smooth and user-friendly experience with all interactive aspects working well.
 
-### Error Pages - ADD ERROR PAGE -->
+Validation was done on the HTML, CSS and JavaScript pages and Wave was used to validate the site as a whole. The results of these tests are below:
+<strong>HTML</strong>
+![HTML validation](/assets/images/validate-html.png)
+
+<strong>CSS</strong>
+![CSS validation](/assets/images/validate-css.png)
+
+<strong>JavaScript</strong>
+![JavaScript validation](/assets/images/validate-js.png)
+<strong>Wave</strong>
+![Wave validation](/assets/images/validate-wave.png)
+One error is shown when the page is validated using Wave. To create the button with the desired styling, I intentionally left the button itself blank and put the 'Back to top' sentence under it as a text snippet. As such, the button itself remains empty, which appears as an error in Wave. I chose to leave this error as it doesn't affect the functionality of the page itself.
 
 
 ## Deployment
@@ -79,36 +91,47 @@ The following steps were taken to deploy the live website from the GitHub reposi
 
 ## Languages Used
 
-- Python
 - HTML
 - CSS
 - Javascript
 
 ## Frameworks - Libraries - Programs Used 
-<!-- - [Am I Responsive](https://amiresponsive.co.uk/) - Used to verify responsiveness of website on different devices.
-- [Favicon](https://favicon.io/) - Used to create the wine glass icon for the browser tab.
-- [Font Awesome](https://fontawesome.com/) - Used for icons on the home page and stars on the About page.
-- [GitHub](https://github.com/) - Used for version control and agile methodology.
-- [Google Fonts](https://fonts.google.com/) - Imported and used to change fonts on pages from default fonts.
-- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
-- [PEP8 Online](https://pep8ci.herokuapp.com/#) - Used to validate all Python code pages in the project.
+- [Am I Responsive](https://amiresponsive.co.uk/) - Used to verify responsiveness of website on different device sizes.
+- [Favicon](https://favicon.io/) - Used to create the icon for the browser tab.
+- [Font Awesome](https://fontawesome.com/) - Used for footer icons and the 'Back to top' button.
+- [GitHub](https://github.com/) - Used to house the project repository.
+- [Google Fonts](https://fonts.google.com/) - Imported and used to style fonts on the page.
+- [W3C](https://www.w3.org/) - Used for HTML & CSS validation.
 - [JSHint](https://jshint.com/) - Used to validate the JavaScript page.
-- [Coolors](https://coolors.co/) - Used to create color scheme.
+- [Coolors](https://coolors.co/) - Used to create the color scheme.
 - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/): CSS used for developing responsiveness and styling the website.
-- [Google](https://www.google.com/): All images used were sourced from a Google search. -->
+- [Google](https://www.google.com/): Images used were sourced from a Google search.
 
 
 ## Bugs
+Two bugs were identified and subsequently solved:
+1. <strong>Card height</strong>
+![BUG: card height](/assets/images/BUG-card-height.png)
+Adding a min-height to the CSS for the 'card' class solved this problem and now all cards are the same height.
 
-## Future Implementations
+2. <strong>Character search layout</strong>
+![BUG: search layout](/assets/images/BUG-search-layout.png)
+There was an issue with the card layout when a character was searched. Instead of the matching cards being displayed in neat rows, the unmatched cards were hidden but taking up the original space. This problem was solved by creating another container in the JS file.
 
-## Credits
 
-<!-- - [W3Schools](https://www.w3schools.com/)
-- [Django Docs](https://docs.djangoproject.com/en/4.0/)
-- [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-- [Stack Overflow](https://stackoverflow.com/)
-- [Code Institute - Blog Walkthrough Project](https://github.com/Code-Institute-Solutions/Django3blog)
-- [YouTube Video for pop up messages](https://www.youtube.com/watch?v=lRrrLCrZDxI) - Used for contact form message pop ups on successful submission and errors. 
--  This youtube video for fetching api data: https://www.youtube.com/watch?v=zUcc4vW-jsI 
--->
+To my knowledge, there are no existing bugs on the website. 
+
+<!-- ## Future Implementations -->
+
+## Credits 
+- [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/) were used for stylistic implementations.
+- This [YouTube video](https://www.youtube.com/watch?v=zUcc4vW-jsI) to help with fetching API data.
+
+The following websites were used for troubleshooting:
+- [W3Schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/) 
+- [Chat GPT](https://chat.openai.com/)
+
+During the testing phase, a friend and colleague, Mia, was vital in helping fix card height and search layout bugs. Thanks, Mia!
+
+

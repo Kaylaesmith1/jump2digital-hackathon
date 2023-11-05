@@ -47,15 +47,15 @@ async function fetchCharacters() {
 
       const statusText = document.createElement('p');
       statusText.classList.add('card-text');
-      statusText.innerHTML = `<u class="card-text-headings">Status</u>: ${character.status}`;
+      statusText.innerHTML = `<u class="card-text-headings">Estat</u>: ${character.status}`;
 
       const speciesText = document.createElement('p');
       speciesText.classList.add('card-text');
-      speciesText.innerHTML = `<u class="card-text-headings">Species</u>: ${character.species}`;
+      speciesText.innerHTML = `<u class="card-text-headings">Espècie</u>: ${character.species}`;
 
       const locationText = document.createElement('p');
       locationText.classList.add('card-text');
-      locationText.innerHTML = `<u class="card-text-headings">Location</u>: ${character.location.name}`;
+      locationText.innerHTML = `<u class="card-text-headings">Localització</u>: ${character.location.name}`;
 
       cardBody.appendChild(name);
       cardBody.appendChild(statusText);
@@ -104,8 +104,6 @@ window.addEventListener('scroll', toggleScrollToTopButton);
 
 // EventListener: scroll to top when clicked
 scrollButton.addEventListener('click', scrollToTop);
-
-
 
 
 // SEARCH A CHARACTER

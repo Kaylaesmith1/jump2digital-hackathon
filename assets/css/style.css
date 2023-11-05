@@ -52,6 +52,7 @@ body {
 }
 
 /* CHARACTER CARDS */
+
 #rick-morty,
 .card-title {
     font-family: 'Bangers', sans-serif;
@@ -70,7 +71,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 10px;
-    min-height: 592px;
+    min-height: 600px;
 }
 
 .card-img-top {
@@ -115,17 +116,16 @@ body {
     color: #16FB1F;
 }
 
-/* FOOTER START */
+/* FOOTER */
 footer {
     background-color: #CFF9FF;
     border: 4px solid #16FB1F;
     border-radius: 35px;
     max-width: 90%;
-    margin: 0 auto;
     text-align: center;
     font-size: 150%;
     width: 40%;
-    margin: 15px auto;
+    margin: 20px auto;
     border-radius: 30px;
 }
 
@@ -169,11 +169,14 @@ ul {
     }
 }
 
-
 @media only screen and (max-width: 380px) {
 
     .search-button,
     .reset-button {
         padding: 6px;
+    }
+
+    #search-input {
+        padding-left: 6px;
     }
 }
